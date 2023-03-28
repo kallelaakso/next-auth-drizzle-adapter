@@ -3,7 +3,9 @@
 This repo is a quick playground version of an adapter for using Drizzle ORM & Postgres with
 next-auth package.
 
-This is code is not production-ready but can be used for playing around with Drizzle and Postgres.
+This is code is not production-ready but can be used for playing around with Next-Auth, Drizzle ORM and Postgres.
+
+Use at your own risk.
 
 ## How to use
 
@@ -45,7 +47,7 @@ This is code is not production-ready but can be used for playing around with Dri
 },
 ```
 
-5. Generate migration files by running `$ npx db:generate`.
+5. Generate migration files by running `$ npx db:generate`
 
 6. Push changes to database by running `$ npx db:push`
 
