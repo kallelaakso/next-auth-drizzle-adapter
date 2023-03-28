@@ -1,0 +1,23 @@
+{
+  "name": "next-auth-drizzle-adapter",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@7.30.0",
+  "scripts": {
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit up:pg"
+  },
+  "dependencies": {
+    "typescript": "^5.0.0",
+    "drizzle-orm": "^0.22.0",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/pg": "^8.6.6",
+    "next-auth": "^4.20.1",
+    "drizzle-kit": "^0.17.0"
+  }
+}
