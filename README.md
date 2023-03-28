@@ -24,10 +24,16 @@ This is code is not production-ready but can be used for playing around with Dri
 3. Add adapter to your Next-Auth's configuration:
 
 ```
+  import { type NextAuthOptions } from "next-auth";
+
   import DrizzlePgAdapter from "./drizzle.adapter";
   import { db } from "./db";
 
-  adapter: DrizzlePgAdapter(db),
+  const authOptions: NextAuthOptions = {
+    ...
+    adapter: DrizzlePgAdapter(db),
+    ...
+  };
 ```
 
 4. Add scripts to `package.json`:
